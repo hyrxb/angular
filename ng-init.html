@@ -6,6 +6,51 @@
     <script src="https://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
 </head>
 <body>
+<!--<div ng-app="" ng-init="firstName='jack'">
+    <p>在输入框尝试输入:</p>
+    <p>姓名: <input type="text" ng-model="firstName"></p>
+    <p>你输入的名字是:{{firstName}}</p>
+</div>-->
+
+<!--数据绑定-->
+<!--<div ng-app="" ng-init="n=1;price=5">
+    <h2>价格计算器</h2>
+    数量：<input type="number" ng-model="n">
+    价格: <input type="number" ng-model="price">
+    <p>总价格:{{n * price}}</p>
+</div>-->
+
+<!--<div ng-app="" ng-init="names=['box','lucy','kja']">
+    <p>使用ng-repeat来循环数组</p>
+    <ul>
+        <li ng-repeat="name in names">
+            {{name}}
+        </li>
+    </ul>
+</div>-->
+
+<!--输出结果-->
+<!--使用ng-repeat来循环数组
+
+box
+lucy
+kja-->
+
+
+<div ng-app="" ng-init="names=[{name:'jack',country:'Norway'},{name:'lucy',country:'china'}]">
+    <p>循环对象</p>
+    <ul>
+        <li ng-repeat="obj in names">
+            {{ obj.name + ', ' + obj.country }}
+        </li>
+    </ul>
+</div>
+
+
+循环对象
+
+jack, Norway
+lucy, china
 
 </body>
 </html>
